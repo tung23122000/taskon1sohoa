@@ -9,13 +9,13 @@ import java.util.List;
 
 @Service
 public class DepartmentSeviceImpl implements DepartmentSevice {
-//    private final DepartmentRespository departmentRespository;
-//
-//    public DepartmentSeviceImpl(
-//            DepartmentRespository departmentRespository) {this.departmentRespository = departmentRespository;}
-//
-//    @Override
-//    public List<Department> getall() {
-//        return departmentRespository.findAll();
-//    }
+    private final DepartmentRespository departmentRespository;
+
+    public DepartmentSeviceImpl(
+            DepartmentRespository departmentRespository) {this.departmentRespository = departmentRespository;}
+
+    @Override
+    public List<Department> getall() {
+        return departmentRespository.findAll();
+    }
 }
