@@ -1,6 +1,7 @@
 package dts.com.digitizing.entity;
 
 import lombok.Data;
+import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -11,7 +12,10 @@ import javax.persistence.Id;
 @Data
 public class Department {
     @Id
-    private String id;
+    private  String id;
+    @Field(name = "id_room")
+    private Long idRoom;
+
     private String name;
 
     private String description;
